@@ -4,8 +4,6 @@ Submissions repository for `ASOC5` - Lost and Found Mobile App
 > [!NOTE]
 All discussions regarding `ASOC5: Lost and Found Mobile App` shall take place in https://github.com/orgs/acm-avv/discussions/13.
 
-https://github.com/acm-avv/crow-nest.rfc
-
 ## Overview
 In-order to be eligible to work on this project as **Request for Code** under the banner of **Amrita Summer of Code, 2025**, you are required to form a team of size 1-4 and have all the members register at [amsoc.vercel.app](https://amsoc.vercel.app)
 
