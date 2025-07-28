@@ -1,0 +1,134 @@
+{
+  "project_info": {
+    "project_number": "580036342865",
+    "project_id": "lost-and-found-app-986a7",
+    "storage_bucket": "lost-and-found-app-986a7.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:580036342865:android:291c8b0d0600667499b470",
+        "android_client_info": {
+          "package_name": "com.example.lost_and_found"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "580036342865-g5aikbair51vq1g7sql7h2af7qoci2uj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.lost_and_found",
+            "certificate_hash": "2023d7219e43e54b8f14af3aa9ec851d242dee21"
+          }
+        },
+        {
+          "client_id": "580036342865-qkju8s32h2k1mpqnqqmnofdg5cio62ft.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.lost_and_found",
+            "certificate_hash": "ae85d8a78e475c49b9d9a5c4e24810e6ae619e5f"
+          }
+        },
+        {
+          "client_id": "580036342865-9kv7mr1u2kj177sb0pss6hjsv9b7ev84.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDrsSBclTCJlyHEi0Hy9I0UGQ2JwPNVx98"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "580036342865-9kv7mr1u2kj177sb0pss6hjsv9b7ev84.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "580036342865-eo0dttsdrsn370n73m4pp6rslrddns5e.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.lostAndFoundApp"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:580036342865:android:8085f5803f753d4699b470",
+        "android_client_info": {
+          "package_name": "com.example.lost_and_found_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "580036342865-9kv7mr1u2kj177sb0pss6hjsv9b7ev84.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDrsSBclTCJlyHEi0Hy9I0UGQ2JwPNVx98"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "580036342865-9kv7mr1u2kj177sb0pss6hjsv9b7ev84.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "580036342865-eo0dttsdrsn370n73m4pp6rslrddns5e.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.lostAndFoundApp"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:580036342865:android:2b458ee015303da199b470",
+        "android_client_info": {
+          "package_name": "com.example.lost_and_found_v2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "580036342865-9kv7mr1u2kj177sb0pss6hjsv9b7ev84.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDrsSBclTCJlyHEi0Hy9I0UGQ2JwPNVx98"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "580036342865-9kv7mr1u2kj177sb0pss6hjsv9b7ev84.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "580036342865-eo0dttsdrsn370n73m4pp6rslrddns5e.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.lostAndFoundApp"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
