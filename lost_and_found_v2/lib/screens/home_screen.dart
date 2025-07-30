@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import "package:provider/provider";
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:lost_and_found_v2/services/auth_service.dart'; // Ensure correct path
 import 'package:lost_and_found_v2/services/firestore_service.dart'; // Ensure correct path
