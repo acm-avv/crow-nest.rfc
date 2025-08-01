@@ -102,6 +102,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "580036342865-5n4hc656jbrihucfdc5hof2je7mgfj99.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.lost_and_found_v2",
+            "certificate_hash": "2023d7219e43e54b8f14af3aa9ec851d242dee21"
+          }
+        },
+        {
           "client_id": "580036342865-9kv7mr1u2kj177sb0pss6hjsv9b7ev84.apps.googleusercontent.com",
           "client_type": 3
         }

@@ -3,12 +3,10 @@ import 'package:image_picker/image_picker.dart';
 import 'dart:io';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:lost_and_found_v2/models/lost_item.dart'; // Ensure correct path
-import 'package:lost_and_found_v2/services/firestore_service.dart'; // Ensure correct path
+import 'package:lost_and_found_v2/models/lost_item.dart';
+import 'package:lost_and_found_v2/services/firestore_service.dart';
 
 class AddItemScreen extends StatefulWidget {
-  const AddItemScreen({super.key});
-
   @override
   _AddItemScreenState createState() => _AddItemScreenState();
 }
@@ -20,7 +18,7 @@ class _AddItemScreenState extends State<AddItemScreen> {
 
   String _title = '';
   String _description = '';
-  String _block = 'Academics'; // Default value
+  String _block = 'Academics';
   String _claimInstructions = '';
   File? _imageFile;
 
@@ -73,7 +71,6 @@ class _AddItemScreenState extends State<AddItemScreen> {
         }
 
         // Generate a new document ID for the item *before* adding it to Firestore
-        // This ID will be used for both the Firestore document and the Storage path
         String newDocId = FirebaseFirestore.instance.collection('items').doc().id;
 
         // Upload the image first
@@ -100,8 +97,9 @@ class _AddItemScreenState extends State<AddItemScreen> {
           createdBy: currentUser.uid,
         );
 
-        // Add the item to Firestore using the generated ID (set instead of add)
-        await _firestoreService.updateLostItem(newItem); // Using updateDoc on a new ID is like setDoc
+        // Call the NEW setLostItem method to add the item with the pre-generated ID
+        await _firestoreService.setLostItem(newItem);
+
 
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(content: Text('Lost item added successfully!')),
@@ -230,11 +228,11 @@ class _AddItemScreenState extends State<AddItemScreen> {
                         padding: EdgeInsets.symmetric(vertical: 15),
                         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
                       ),
-                      onPressed: _submitItem,
                       child: Text(
                         'Add Item',
                         style: TextStyle(color: Colors.white, fontSize: 18),
                       ),
+                      onPressed: _submitItem,
                     ),
                     SizedBox(height: 10),
                     if (_errorMessage.isNotEmpty && _imageFile != null)

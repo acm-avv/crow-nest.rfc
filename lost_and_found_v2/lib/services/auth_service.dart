@@ -31,14 +31,31 @@ class AuthService {
       User? user = userCredential.user;
 
       if (user != null) {
-        await _firestore.collection('users').doc(user.uid).set({
-          'uid': user.uid,
-          'email': user.email,
-          'displayName': user.displayName,
-          'photoURL': user.photoURL,
-          'role': 'user', // Default role for new users
-          'createdAt': FieldValue.serverTimestamp(),
-        }, SetOptions(merge: true));
+        // Use a transaction to safely check for and update the user document
+        await _firestore.runTransaction((transaction) async {
+          final userDocRef = _firestore.collection('users').doc(user.uid);
+          final userDocSnapshot = await transaction.get(userDocRef);
+
+          // Get the current data, or an empty map if the document doesn't exist
+          final currentData = userDocSnapshot.data() ?? {};
+
+          // Data to be merged/updated
+          Map<String, dynamic> newData = {
+            'uid': user.uid,
+            'email': user.email,
+            'displayName': user.displayName,
+            'photoURL': user.photoURL,
+          };
+
+          // Only set the default role if the 'role' field does not exist
+          if (!currentData.containsKey('role')) {
+            newData['role'] = 'user';
+            newData['createdAt'] = FieldValue.serverTimestamp();
+          }
+
+          // Write the data back to Firestore
+          transaction.set(userDocRef, newData, SetOptions(merge: true));
+        });
       }
 
       print('Successfully signed in with Google: ${user?.email}');
