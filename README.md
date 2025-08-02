@@ -9,10 +9,10 @@ In-order to be eligible to work on this project as **Request for Code** under th
 
 ## Project Manager Details
 ```json
-"Name": "Revanth Singothu",
-"Year": "4th",
-"Roll": "CB.EN.U4CSE22149",
-"GitHub": "@rev-sin",
+"Name": "Revanth Singothu, Leela Mahalakshmi",
+"Year": "4th and 3rd",
+"Roll": "CB.EN.U4CSE22149, CB.SC.U4CSE23336",
+"GitHub": "@rev-sin, @Leela0o5",
 ```
 
 ## How to Apply
@@ -30,13 +30,12 @@ Type out a message in https://github.com/orgs/acm-avv/discussions/13 with the fo
 ---
 ## Project Description
 
-A **Lost and Found Mobile App** will be developed to simplify the process of reporting and claiming lost items within an educational institution (e.g., a university or school). It will feature a Flutter-based mobile application and a supporting backend, accessible to students and teachers via Microsoft OAuth.
+A **Lost and Found Mobile App** will be developed to simplify the process of reporting and claiming lost items within an educational institution (e.g., a university or school). It will feature a Flutter-based mobile application and a supporting backend, accessible to students and teachers.
 
 * **Overall Goal:** To create a simple, easy-to-use, and deployable lost and found system for mobile (Android and iOS) within the current semester.
 
 * **Repository 1: Mobile Application (Flutter)**
     * **Platform:** Flutter (supports both Android and iOS).
-    * **User Access:** Students and teachers can log in via Microsoft OAuth.
     * **Functionality for All Users (Students & Teachers):**
         * View lists of "lost items" reported by various blocks (Academics, Canteen, Library, etc.).
         * Claim their lost articles.
@@ -48,7 +47,6 @@ A **Lost and Found Mobile App** will be developed to simplify the process of rep
     * **Purpose:** To support the mobile application's functionalities.
     * **Key Responsibilities:**
         * Manages the listing and categorization of lost items from different blocks.
-        * Handles user authentication via Microsoft OAuth.
         * Stores item details, including pictures and claiming instructions.
         * Manages the claiming process.
         * Ensures data security and role-based access control.
